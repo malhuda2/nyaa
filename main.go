@@ -33,6 +33,10 @@ func main() {
 	conf_bind := conf.BindFlags()
 	defaults := flag.Bool("print-defaults", false, "print the default configuration file on stdout")
 	flag.Parse()
+	err := conf_bind()
+	if err != nil {
+		log.CheckError(err)
+	}
 	if *defaults {
 		stdout := bufio.NewWriter(os.Stdout)
 		conf.Pretty(stdout)

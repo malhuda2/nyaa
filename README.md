@@ -11,7 +11,7 @@ that anyone will be able to deploy locally or remotely.
 
 # Installation
 * Install [Golang](https://golang.org/doc/install)
-* `go get github.com/ewhal/nyaa`
+* `go get github.com/malhuda2/nyaa`
 * `go build`
 * Download DB and place it in your root folder named as "nyaa.db"
 * `./nyaa`
